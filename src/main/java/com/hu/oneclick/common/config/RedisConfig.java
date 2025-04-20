@@ -40,8 +40,9 @@ public class RedisConfig {
                 .setRetryInterval(1500)
                 .setSubscriptionsPerConnection(5)
                 .setSubscriptionConnectionMinimumIdleSize(1)
-                .setSubscriptionConnectionPoolSize(50)
-                .setConnectionPoolSize(10)
+                .setSubscriptionConnectionPoolSize(10)
+                .setConnectionMinimumIdleSize(5)
+                .setConnectionPoolSize(20)
                 .setDnsMonitoringInterval(5000);
         config.setThreads(0);
         config.setNettyThreads(0);
