@@ -2,6 +2,7 @@ modules = ["java-graalvm22.3", "web"]
 
 [nix]
 channel = "stable-24_05"
+packages = ["nettools"]
 
 [workflows]
 runButton = "Run Spring Boot"
@@ -14,3 +15,11 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "export GIT_REPO_DIR=/home/runner/workspace/git-repos && ./mvnw spring-boot:run -Dspring.profiles.active=prod"
+
+[[ports]]
+localPort = 8082
+externalPort = 3000
+
+[[ports]]
+localPort = 35729
+externalPort = 80
