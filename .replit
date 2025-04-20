@@ -13,4 +13,4 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "./mvnw spring-boot:run -Dspring.profiles.active=prod"
+args = "export GIT_REPO_DIR=/home/runner/workspace/git-repos && ./mvnw spring-boot:run -Dspring.profiles.active=prod"
