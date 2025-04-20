@@ -13,4 +13,4 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "./mvnw spring-boot:run -Dspring.profiles.active=dev"
+args = "./mvnw spring-boot:run -Dspring.profiles.active=prod"
