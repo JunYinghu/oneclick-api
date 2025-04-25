@@ -77,7 +77,7 @@ public class SignOffController {
         return projectService.upload(file);
     }
 
-    @GetMapping("/delete")
+    @DeleteMapping("/delete")
     @ApiOperation("文件删除")
     public Resp<String> delete(@RequestParam String fileId) {
         return attachmentService.deleteAttachmentById(fileId);
