@@ -19,3 +19,7 @@ args = "export GIT_REPO_DIR=/home/runner/workspace/git-repos && ./mvnw spring-bo
 [[ports]]
 localPort = 8082
 externalPort = 3000
+
+[[ports]]
+localPort = 35729
+externalPort = 80
